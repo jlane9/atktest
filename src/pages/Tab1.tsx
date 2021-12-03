@@ -17,10 +17,28 @@ const Tab1: React.FC = () => {
             <IonTitle size="large">Tab 1</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <h1>
-          {process.env.NODE_ENV}
-          {process.env.REACT_APP_TESTVALUE}
-        </h1>
+        <table>
+          <th>
+            <td>name</td>
+            <td>value</td>
+          </th>
+          <tr>
+            <td>
+              REACT_APP_TESTVALUE
+            </td>
+            <td>
+              {process.env.REACT_APP_TESTVALUE}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              REACT_APP_MIXPANEL_TOKEN
+            </td>
+            <td>
+              {process.env.REACT_APP_MIXPANEL_TOKEN}
+            </td>
+          </tr>
+        </table>
         <ExploreContainer name="Tab 1 page" />
       </IonContent>
     </IonPage>
